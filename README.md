@@ -17,7 +17,7 @@
 ✅ Imagem Docker disponivel no DockerHUB 
 
 ## Construção e Desenvolvimento:
-$ 1. Criado script que expoe variavel desejada "TWORPTEST"
+$ 1. Criado script que expoe variavel desejada "TWORPTEST" (app.sh)
 
 🐋 2. Criado imagem Docker na aplicacao e upada no DockerHUB
 
