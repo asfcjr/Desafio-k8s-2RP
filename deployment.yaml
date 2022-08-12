@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: shell-app
+spec:
+  selector:
+    matchLabels:
+      app: shell-app
+  template:
+    metadata:
+      labels:
+        app: shell-app
+    spec:
+      containers:
+      - name: shell-app
+        image: asfcjr/shell-app:latest
+        env:
+          - name: TWORPTEST
+            valueFrom:
+              secretKeyRef:
+                name: secret-env
+                key: TWORPTEST
+        ports:
+        - containerPort: 80
